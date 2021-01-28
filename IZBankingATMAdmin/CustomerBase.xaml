@@ -1,0 +1,50 @@
+﻿<Window x:Class="IZBankingATMAdmin.CustomerBase"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns:local="clr-namespace:IZBankingATMAdmin"
+        mc:Ignorable="d"
+        Title="IZ Banking Admin Dashboard" Height="700" Width="1200" WindowStartupLocation="CenterScreen" WindowStyle="None" ResizeMode="NoResize">
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush StartPoint="0.1,0" EndPoint="0.9,1">
+                <GradientStop Color="#FFE63070" Offset="1"/>
+                <GradientStop Color="#FFFE8704" Offset="0"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Border Height="650" VerticalAlignment="Bottom" Background="#100E17">
+        </Border>
+        <StackPanel Orientation="Horizontal">
+            <StackPanel Width="120" Height="50" VerticalAlignment="Top" Margin="5 0">
+                <Image Source="Images/logo.png" Width="120" Height="50" Stretch="Fill"></Image>
+            </StackPanel>
+            <StackPanel Height="100" Width="1070" VerticalAlignment="Top">
+                <Button Margin="5 5" HorizontalAlignment="Right" Style="{StaticResource MaterialDesignFloatingActionButton}" MaxWidth="40" MaxHeight="40" Background="{x:Null}"
+                 ToolTip="Close" x:Name="BtnExit" Click="BtnExit_Click">
+                    <materialDesign:PackIcon Kind="Close" Foreground="White" Width="30" Height="30" />
+                </Button>
+            </StackPanel>
+        </StackPanel>
+        <StackPanel>
+            <Button Name="BackBtn" Width="100" Margin="20 70 0 0" HorizontalAlignment="Left" Content="Terug" Click="Button_Click"></Button>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+            <StackPanel Width="1100" Height="600" Margin="0 120 0 0">
+                <Grid Grid.Column="0" Background="#e3e6e4">
+                    <DataGrid Name="dataGrid" ItemsSource="{Binding}" CanUserAddRows="False" FontSize="11">
+                        <DataGrid.Columns>
+                            <DataGridTemplateColumn>
+                                <DataGridTemplateColumn.CellTemplate>
+                                    <DataTemplate>
+                                    </DataTemplate>
+                                </DataGridTemplateColumn.CellTemplate>
+                            </DataGridTemplateColumn>
+                        </DataGrid.Columns>
+                    </DataGrid>
+                </Grid>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>

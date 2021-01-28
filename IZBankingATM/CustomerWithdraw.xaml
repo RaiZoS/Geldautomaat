@@ -1,0 +1,38 @@
+﻿<Window x:Class="IZBankingATM.CustomerWithdraw"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns:local="clr-namespace:IZBankingATM"
+        mc:Ignorable="d"
+        Title="IZ Banking ATM Login" Height="900" Width="1300" WindowStartupLocation="CenterScreen" WindowStyle="None" ResizeMode="NoResize">
+    <Grid>
+        <Border Height="900" VerticalAlignment="Top" Background="#FF79AAFF">
+        </Border>
+        <StackPanel Orientation="Horizontal">
+            <StackPanel Width="350">
+                <Image Source="images/logo.png" Width="300" Height="140" VerticalAlignment="Top" Margin="30" Stretch="Fill"></Image>
+                <Button Name="BackButton" Content="Terug" Width="300" Height="80" Margin="20 15 2 2" FontSize="35" HorizontalAlignment="Left" Background="#FFB82C2C" BorderBrush="#FFBD2929" Click="SaldoBackButton"></Button>
+            </StackPanel>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+            <StackPanel Width="450" Height="550" Margin="0 300 0 0">
+                <Button Name="Withdraw5" Content="€5,-" Width="400" Height="80" Margin="10 15 2 2" FontSize="35" HorizontalAlignment="Left" Background="#FF3C83FD" BorderBrush="#FF367FFF" Click="Withdraw5_Click"/>
+                <Button Name="Withdraw10" Content="€10,-" Width="400" Height="80" Margin="10 35 2 2" FontSize="35" HorizontalAlignment="Left" Background="#FF3C83FD" BorderBrush="#FF367FFF" Click="Withdraw10_Click"/>
+                <Button Name="Withdraw20" Content="€20,-" Width="400" Height="80" Margin="10 35 2 2" FontSize="35" HorizontalAlignment="Left" Background="#FF3C83FD" BorderBrush="#FF367FFF" Click="Withdraw20_Click"></Button>
+                <Button Name="Withdraw50" Content="€50,-" Width="400" Height="80" Margin="10 35 2 2" FontSize="35" HorizontalAlignment="Left" Background="#FF3C83FD" BorderBrush="#FF367FFF" Click="Withdraw50_Click"></Button>
+            </StackPanel>
+            <StackPanel Width="450" Height="550" Margin="0 300 0 0">
+                <Button Name="Withdraw100" Content="€100,-" Width="400" Height="80" Margin="10 15 2 2" FontSize="35" HorizontalAlignment="Left" Background="#FF3C83FD" BorderBrush="#FF367FFF" Click="Withdraw100_Click"></Button>
+                <Button Name="Withdraw200" Content="€200,-" Width="400" Height="80" Margin="10 35 2 2" FontSize="35" HorizontalAlignment="Left" Background="#FF3C83FD" BorderBrush="#FF367FFF" Click="Withdraw200_Click"></Button>
+                <Button Name="Withdraw500" Content="€500,-" Width="400" Height="80" Margin="10 35 2 2" FontSize="35" HorizontalAlignment="Left" Background="#FF3C83FD" BorderBrush="#FF367FFF" Click="Withdraw500_Click"></Button>
+                <TextBox x:Name="WithdrawInput" Text="" Width="275" Height="80" Margin="10 35 2 2" FontSize="35" HorizontalAlignment="Left" Background="White" TextAlignment="Center" BorderBrush="#FF367FFF" PreviewTextInput="WithdrawInput_PreviewTextInput" DataObject.Pasting="WithdrawInput_DataObjectPasting"/>
+            </StackPanel>
+        </StackPanel>
+        <StackPanel HorizontalAlignment="Right">
+            <Button Name="Withdrawi" Content="Opnemen" Width="115" Height="80" Margin="10 691 240 2" FontSize="18" HorizontalAlignment="Left" Background="#FF3C83FD" BorderBrush="#FF367FFF" Click="Withdrawi_Click"></Button>
+        </StackPanel>
+    </Grid>
+</Window>
+

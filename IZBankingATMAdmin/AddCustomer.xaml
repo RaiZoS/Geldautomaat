@@ -1,0 +1,51 @@
+﻿<Window x:Class="IZBankingATMAdmin.AddCustomer"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns:local="clr-namespace:IZBankingATMAdmin"
+        mc:Ignorable="d"
+        Title="IZ Banking Admin Dashboard" Height="700" Width="1200" WindowStartupLocation="CenterScreen" WindowStyle="None" ResizeMode="NoResize">
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush StartPoint="0.1,0" EndPoint="0.9,1">
+                <GradientStop Color="#FFE63070" Offset="1"/>
+                <GradientStop Color="#FFFE8704" Offset="0"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Border Height="650" VerticalAlignment="Bottom" Background="#100E17">
+        </Border>
+        <StackPanel Orientation="Horizontal">
+            <StackPanel Width="120" Height="50" VerticalAlignment="Top" Margin="5 0">
+                <Image Source="Images/logo.png" Width="120" Height="50" Stretch="Fill"></Image>
+            </StackPanel>
+            <StackPanel Height="100" Width="1070" VerticalAlignment="Top">
+                <Button Margin="5 5" HorizontalAlignment="Right" Style="{StaticResource MaterialDesignFloatingActionButton}" MaxWidth="40" MaxHeight="40" Background="{x:Null}"
+                 ToolTip="Close" x:Name="BtnExit" Click="BtnExit_Click">
+                    <materialDesign:PackIcon Kind="Close" Foreground="White" Width="30" Height="30" />
+                </Button>
+            </StackPanel>
+        </StackPanel>
+        <StackPanel>
+            <Button Name="BackBtn" Width="100" Margin="20 70 0 0" HorizontalAlignment="Left" Content="Terug" Click="Button_Click"></Button>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+            <StackPanel Width="350" Height="500" Margin="0 120 0 0">
+                <TextBox x:Name="Email" HorizontalAlignment="Left" Margin="10 2 2 2" materialDesign:HintAssist.Hint="Emailadres" Foreground="White" Width="250" BorderBrush="White" CaretBrush="#FFD94448" SelectionBrush="#FFD94448" FontSize="16"></TextBox>
+                <TextBox x:Name="FirstName" HorizontalAlignment="Left" Margin="10 2 2 2" materialDesign:HintAssist.Hint="Voornaam" Foreground="White" Width="250" BorderBrush="White" CaretBrush="#FFD94448" SelectionBrush="#FFD94448" FontSize="16"></TextBox>
+                <TextBox x:Name="CitizenServiceNumber" HorizontalAlignment="Left" Margin="10 2 2 2" materialDesign:HintAssist.Hint="Burgerservicenummer" Foreground="White" Width="250" BorderBrush="White" CaretBrush="#FFD94448" SelectionBrush="#FFD94448" FontSize="16"></TextBox>
+                <TextBox x:Name="Address" HorizontalAlignment="Left" Margin="10 2 2 2" materialDesign:HintAssist.Hint="Adres" Foreground="White" Width="250" BorderBrush="White" CaretBrush="#FFD94448" SelectionBrush="#FFD94448" FontSize="16"></TextBox>
+                <TextBox x:Name="PostalCode" HorizontalAlignment="Left" Margin="10 2 2 2" materialDesign:HintAssist.Hint="Postcode" Foreground="White" Width="250" BorderBrush="White" CaretBrush="#FFD94448" SelectionBrush="#FFD94448" FontSize="16"></TextBox>
+                <Button Name="AccountSaveButton" Width="100" Margin="10 15 2 2" HorizontalAlignment="Left" Content="Opslaan" Click="AccountSave"></Button>
+            </StackPanel>
+            <StackPanel Width="350" Height="500" Margin="0 120 0 0">
+                <TextBox x:Name="Sex" HorizontalAlignment="Left" Margin="10 2 2 2" materialDesign:HintAssist.Hint="Geslacht" Foreground="White" Width="250" BorderBrush="White" CaretBrush="#FFD94448" SelectionBrush="#FFD94448" FontSize="16"></TextBox>
+                <TextBox x:Name="LastName" HorizontalAlignment="Left" Margin="10 2 2 2" materialDesign:HintAssist.Hint="Achternaam" Foreground="White" Width="250" BorderBrush="White" CaretBrush="#FFD94448" SelectionBrush="#FFD94448" FontSize="16"></TextBox>
+                <DatePicker x:Name="DateOfBirthPicker" HorizontalAlignment="Left" Margin="10 2 2 2" materialDesign:HintAssist.Hint="Geboortedatum" Width="250" FontSize="16" Foreground="White" BorderBrush="White" CalendarOpened="DatePickerOpened" CalendarClosed="DatePickerClosed"/>
+                <TextBox x:Name="HouseNumber" HorizontalAlignment="Left" Margin="10 2 2 2" materialDesign:HintAssist.Hint="Huisnummer" Foreground="White" Width="250" BorderBrush="White" CaretBrush="#FFD94448" SelectionBrush="#FFD94448" FontSize="16"></TextBox>
+                <TextBox x:Name="Town" HorizontalAlignment="Left" Margin="10 2 2 2" materialDesign:HintAssist.Hint="Woonplaats" Foreground="White" Width="250" BorderBrush="White" CaretBrush="#FFD94448" SelectionBrush="#FFD94448" FontSize="16"></TextBox>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>

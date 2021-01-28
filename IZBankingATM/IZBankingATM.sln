@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30709.132
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IZBankingATM", "IZBankingATM.csproj", "{267FF921-5C7E-493D-AD2E-5C354FCBAD3D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IZBankingATMAdmin", "..\IZBankingATMAdmin\IZBankingATMAdmin.csproj", "{B760C15B-7449-4BAE-BFF9-81BC84BAF8F0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IZBankingATMClassLibrary", "..\IZBankingATMClassLibrary\IZBankingATMClassLibrary.csproj", "{F94AA5A5-38E2-438B-BC0A-24B45C699CF0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{267FF921-5C7E-493D-AD2E-5C354FCBAD3D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{267FF921-5C7E-493D-AD2E-5C354FCBAD3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{267FF921-5C7E-493D-AD2E-5C354FCBAD3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{267FF921-5C7E-493D-AD2E-5C354FCBAD3D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B760C15B-7449-4BAE-BFF9-81BC84BAF8F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B760C15B-7449-4BAE-BFF9-81BC84BAF8F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B760C15B-7449-4BAE-BFF9-81BC84BAF8F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B760C15B-7449-4BAE-BFF9-81BC84BAF8F0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F94AA5A5-38E2-438B-BC0A-24B45C699CF0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F94AA5A5-38E2-438B-BC0A-24B45C699CF0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F94AA5A5-38E2-438B-BC0A-24B45C699CF0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F94AA5A5-38E2-438B-BC0A-24B45C699CF0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FE8BE221-668A-4211-A222-F8ABFF6E22A4}
+	EndGlobalSection
+EndGlobal
